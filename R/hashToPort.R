@@ -2,7 +2,7 @@
 
 #' Hash a value to a valid port
 #' 
-#' @param hash Character or numeric (quasi-integer) vector of length \code{1}.
+#' @param value Character or numeric (quasi-integer) vector of length \code{1}.
 #' @return Integer.
 #' 
 #' @details The implemented hash function is pure but not perfect/injective/
