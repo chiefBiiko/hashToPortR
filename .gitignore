@@ -1,2 +1,5 @@
 node_modules
 in.js
+.Rproj.user
+.Rhistory
+.RData

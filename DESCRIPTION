@@ -1,0 +1,16 @@
+Package: hashToPortR
+Title: Hash a value to a valid port
+Version: 0.0.0.9000
+Authors@R: person("Noah Anabiik", "Schwarz", email = "noah.anabiik.schwarz@gmail.com", role = c("aut", "cre"))
+Description: Maps strings and integers to valid port numbers.
+Imports:
+    V8
+Depends:
+    R (>= 3.3.2)
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Suggests:
+    compiler,
+    testthat
+RoxygenNote: 5.0.1
