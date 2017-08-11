@@ -5,7 +5,7 @@
 #' @param value Character or numeric (quasi-integer) vector of length \code{1}.
 #' @return Integer.
 #' 
-#' @details The implemented hash function is pure but not perfect/injective/
+#' @details The implemented hash function is pure but not perfect/
 #' collision free. This is just a R binding to the fabolous \code{hash-to-port}
 #' npm module bundled by \code{mafintosh} based on the marvelous 
 #' \code{hash-index} npm module written by \code{watson}.
@@ -18,6 +18,6 @@ hashToPort <- function(value) {
   stopifnot(length(value) == 1L, 
             is.character(value) || is.numeric(value) && value %% 1L == 0L)
   ct <- V8::v8()
-  ct$source(file.path(.libPaths()[1], 'hashToPortR', 'bundle.js'))
+  ct$source(file.path(.libPaths()[1L], 'hashToPortR', 'bundle.js'))
   return(ct$call('hashToPort', value))
 }

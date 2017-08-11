@@ -3,15 +3,11 @@ Title: Hash a value to a valid port
 Version: 0.0.0.9000
 Authors@R: person("Noah Anabiik", "Schwarz", email = "noah.anabiik.schwarz@gmail.com", role = c("aut", "cre"))
 Description: Maps strings and integers to valid port numbers.
-Imports:
-    V8
-Depends:
-    R (>= 3.3.2)
+Imports: V8
+Depends: R (>= 3.0.0)
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Suggests:
-    compiler,
-    testthat,
-    covr
-RoxygenNote: 5.0.1
+ByteCompile: true
+Suggests: compiler, testthat, covr
+RoxygenNote: 6.0.1
