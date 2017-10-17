@@ -18,4 +18,6 @@ devtools::install_github('chiefBiiko/hashToPortR')
 hashToPortR::hashToPort('chiefBiiko')  # always returns 22099
 ```
 
+## License
+
 MIT
